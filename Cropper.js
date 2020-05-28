@@ -44,10 +44,12 @@ const Cropper = () => {
          <div>
           <input type="file" onChange={handleFileChange} id="file"/>
           <label htmlFor="file">choose a file</label>
+          
         </div>
         {
             src && (
               <div>
+                <p>select the area to crop the image</p>
                 <ReactCrop 
                   src={src}
                   onImageLoaded={setImage} 
